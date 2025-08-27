@@ -1,0 +1,142 @@
+#main-output-history{
+    pointer-events: none;
+    table-layout: auto;
+    /* width: 100%; */
+    font-family: consolas;
+    font-size: 9px;
+    border-collapse: collapse;
+    thead, tbody{
+        tr{
+            td, th{
+                font-weight: normal;
+                vertical-align: top!important;
+                white-space: nowrap!important;
+                overflow: hidden!important;
+                text-overflow: ellipsis!important;
+                padding-inline: 4px;
+                padding-block: 1px;
+            }
+            td.light_mode, th.light_mode{
+                color: #0007;
+            }
+        }
+    }
+    thead {
+        /* background-color: #01010133; */
+    }
+    td, th {
+        border-spacing: 0;
+        padding: 0px;
+    }
+    tbody{
+        .history{
+            animation: show 500ms normal;
+            /* background-color: #01010133; */
+            /* margin-block: 4px; */
+            /* display: block; */
+            /* background-color: #ffffff05; */
+            .pid{
+                color: #5f57;
+                /* display: inline-block; */
+                margin-inline: 9px;
+            }
+            .pid.light_mode{
+                color: rgba(48, 118, 72, 0.467);
+                /* display: inline-block; */
+                margin-inline: 9px;
+            }
+            .datetime {
+                color: #f5f7;
+                /* width: 100px; */
+            }
+            .datetime.light_mode {
+                color: rgba(134, 46, 134, 0.467);
+                /* width: 100px; */
+            }
+            .executable_path{
+                /* white-space: wrap!important; */
+                /* width: 200px; */
+                /* margin-left: 10px; */
+                color: #ffca7b77;
+            }
+            .executable_path.light_mode{
+                /* white-space: wrap!important; */
+                /* width: 200px; */
+                /* margin-left: 10px; */
+                color: #7c654377;
+            }
+            .executable_name_add{
+                /* white-space: wrap!important; */
+                color: #55b8ff77;
+                /* text-shadow: #fc0 0px 0px 3px; */
+                /* width: 150px; */
+            }
+            .executable_name_add.light_mode{
+                /* white-space: wrap!important; */
+                color: #3e617977;
+                /* text-shadow: #fc0 0px 0px 3px; */
+                /* width: 150px; */
+            }
+        }
+        .history_remove{
+            animation: show 500ms normal;
+            background-color: #ff000020;
+            .pid{
+                color: #ffff5577;
+                /* display: inline-block; */
+                margin-inline: 9px;
+            }
+            .datetime {
+                color: #ffff5577;
+                /* width: 100px; */
+            }
+            .executable_path{
+                /* white-space: wrap!important; */
+                /* width: 200px; */
+                /* margin-left: 10px; */
+                color: #ffff5577;
+            }
+            .executable_name_add{
+                /* white-space: wrap!important; */
+                color: #ffff5577;
+                /* width: 150px; */
+                /* text-shadow: #fc0 0px 0px 3px; */
+            }
+            .executable_name_remove{
+                /* white-space: wrap!important; */
+                color: #ffff5577;
+                /* width: 150px; */
+            }
+        }
+        .history_remove.light_mode{
+            animation: show 500ms normal;
+            background-color: #ff000020;
+            .pid{
+                color: #4e4e2777;
+                /* display: inline-block; */
+                margin-inline: 9px;
+            }
+            .datetime.light_mode {
+                color: #4e4e2777;
+                /* width: 100px; */
+            }
+            .executable_path.light_mode{
+                /* white-space: wrap!important; */
+                /* width: 200px; */
+                /* margin-left: 10px; */
+                color: #4e4e2777;
+            }
+            .executable_name_add.light_mode{
+                /* white-space: wrap!important; */
+                color: #4e4e2777;
+                /* width: 150px; */
+                /* text-shadow: #fc0 0px 0px 3px; */
+            }
+            .executable_name_remove.light_mode{
+                /* white-space: wrap!important; */
+                color: #4e4e2777;
+                /* width: 150px; */
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+
+.hidden-visibility {
+    visibility: hidden;
+}
+#user-action {
+    position: fixed;
+    pointer-events: auto;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+#app-settings {
+    position: fixed;
+    pointer-events: auto;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f551;
+    border: solid 1px #f552;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+    /* -webkit-backdrop-filter: blur(10px); */
+    table {
+        tr {
+            td {
+                font-size: 10px;
+                flex-direction: row;
+                font-family: consolas;
+                color: #fff7;
+            }
+        }
+    }
+}
+#app-settings.light_mode {
+    background-color: #f551;
+    border: solid 1px #f552;
+    table.light_mode{
+        tr.light_mode {
+            td.light_mode {
+                color: #0007;
+            }
+        }
+    }
+}
+.toggle-able-button {
+    background-color: transparent;
+    border: none;
+    svg {
+        border: solid 1px #fff7;
+        fill: #fff7;
+        border-radius: 2.5px;
+    }
+}
+.toggle-able-button.light_mode {
+    svg {
+        border: solid 1px #0007;
+        fill: #0007;
+    }
+}
+
+/* unactive parts */
+.unactive-text {
+    color: #9997!important;
+}
+.unactive-text.light_mode {
+    color: #4447!important;
+}
+.unactive-toggle-able-button {
+    background-color: transparent;
+    border: none;
+    svg {
+        border: solid 1px #9997;
+        fill: #9997;
+        border-radius: 2.5px;
+    }
+}
+.unactive-toggle-able-button.light_mode {
+    svg {
+        border: solid 1px #4447;
+        fill: #4447;
+    }
+}
+
+.active-toggle-able-button {
+
+}
+.important-part {
+    /* top: 0px;
+    left: 0px; */
+    bottom: 5px;
+    position: fixed;
+    font-family: consolas;
+    color: #fff8;
+    font-size: 9px;
+}
+.important-part.light_mode {
+    color: #0008;
+}

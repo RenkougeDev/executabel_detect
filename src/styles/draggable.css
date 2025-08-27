@@ -1,0 +1,33 @@
+
+#draggable{
+    height: 100%;
+    -webkit-app-region: drag;
+    position: fixed;
+    /* height: 100%;
+    width: 75%; */
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 0px;
+    z-index: 1;
+    /* pointer-events: none; */
+}
+.draggable-background-color{
+    background-color: #ffff0011;
+}
+.draggable-style {
+    fill: #f557!important;
+    background-color: #f551;
+    border: solid 1px #f552;
+}
+.draggable-style-2 {
+    fill: #0f57!important;
+    background-color: #0f51;
+    border: solid 1px #0f52;
+}
+.larger-draggable-tool {
+    width: 50px;
+}
+#draggable:hover {}
+.hidden {
+    display: none!important;
+}

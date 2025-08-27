@@ -1,0 +1,38 @@
+::-webkit-scrollbar{
+    display: none;
+}
+#border {
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    border: solid 1px #fff2;
+}
+#border.light_mode{
+    border: solid 1px #0002;
+}
+html{
+    color: #fff7;
+}
+html.light_mode{
+    color: #0007;
+}
+@keyframes show {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+body {
+    margin: 0px;
+    padding: 5px;
+    /* display: flex;
+    flex-direction: column; */
+    /* overflow: hidden; */
+    /* width: 100vw; */
+    height: 100vh;
+}

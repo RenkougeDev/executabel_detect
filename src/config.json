@@ -1,0 +1,15 @@
+{
+    "view_datetime": true,
+    "view_executable_name": true,
+    "view_executable_path": true,
+    "view_pid": true,
+    "larger_draggable_tool": false,
+    "visibility_draggable_tool": false,
+    "special_executable": [
+        "svchost.exe"
+    ],
+    "special_path_executable": [
+        "NULL"
+    ],
+    "toggle_dark": false
+}

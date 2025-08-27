@@ -1,0 +1,72 @@
+#main-output-database{
+    pointer-events: none;
+    table-layout: auto;
+    /* width: 100%; */
+    font-family: consolas;
+    font-size: 9px;
+    border-collapse: collapse;
+    thead, tbody{
+        tr{
+            td, th{
+                font-weight: normal;
+                vertical-align: top!important;
+                white-space: nowrap!important;
+                overflow: hidden!important;
+                text-overflow: ellipsis!important;
+                padding-inline: 4px;
+                padding-block: 1px;
+            }
+            td.light_mode, th.light_mode {
+                color: #0007;
+            }
+        }
+    }
+    thead {
+        /* background-color: #01010133; */
+    }
+    td, th {
+        border-spacing: 0;
+        padding: 0px;
+    }
+    tbody{
+        .history{
+            animation: show 500ms normal;
+            /* background-color: #01010133; */
+            /* margin-block: 4px; */
+            /* display: block; */
+            /* background-color: #ffffff05; */
+            .datetime {
+                color: #0f57;
+                /* width: 100px; */
+            }
+            .datetime.light_mode {
+                color: rgba(48, 118, 72, 0.467);
+                /* width: 100px; */
+            }
+            .executable_path{
+                /* white-space: wrap!important; */
+                /* width: 200px; */
+                /* margin-left: 10px; */
+                color: #ffca7b77;
+            }
+            .executable_path.light_mode{
+                /* white-space: wrap!important; */
+                /* width: 200px; */
+                /* margin-left: 10px; */
+                color: #7c654377;
+            }
+            .executable_name{
+                /* white-space: wrap!important; */
+                color: #55b8ff77;
+                /* text-shadow: #fc0 0px 0px 3px; */
+                /* width: 150px; */
+            }
+            .executable_name.light_mode{
+                /* white-space: wrap!important; */
+                color: #3e617977;
+                /* text-shadow: #fc0 0px 0px 3px; */
+                /* width: 150px; */
+            }
+        }
+    }
+}
