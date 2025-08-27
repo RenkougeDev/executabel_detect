@@ -1,0 +1,1 @@
+pyinstaller script/config_handler.py

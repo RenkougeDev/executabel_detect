@@ -1,0 +1,1 @@
+g++ script/executable_name_history.cc -D _WIN32_DCOM -l ole32 -l oleaut32 -l wbemuuid -L "C:\Program Files\mingw64\lib" -o backend/executable_name_history.exe -I ./include
