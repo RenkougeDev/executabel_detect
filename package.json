@@ -1,0 +1,23 @@
+{
+  "name": "executed_detect",
+  "version": "1.0.0",
+  "main": "src/main/main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "electron .",
+    "compile": "electron-packager . \"Execute detect\" --platform=win32 --arch=x64 --overwrite --out=dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "electron": "^37.2.3",
+    "electron-packager": "^17.1.2"
+  },
+  "type": "module"
+}
+  
